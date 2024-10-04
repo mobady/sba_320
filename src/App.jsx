@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "./App.css"
 
 function App() {
   const [surahs, setSurahs] = useState([]);
@@ -20,10 +21,12 @@ function App() {
       <ul>
         {surahs.map((surah) => (
           <li key={surah.number}>
-            <h2>{surah.englishName} - {surah.name}</h2>
-            <p>Translation: {surah.englishNameTranslation}</p>
-            <p>Number of Ayahs: {surah.numberOfAyahs}</p>
-            <p>Revelation Type: {surah.revelationType}</p>
+            <h2 className="surahName">{surah.englishName} - {surah.name}</h2>
+            <div className="surahDetails">
+            <p><b>Translation: </b>{surah.englishNameTranslation}</p>
+            <p><b>Number of Ayahs: </b>{surah.numberOfAyahs}</p>
+            <p><b>Revelation Type: </b>{surah.revelationType}</p>
+            </div>
             <button onClick={() => alert(`You selected Surah ${surah.englishName}`)}>
               Read Surah {surah.englishName}
             </button>
