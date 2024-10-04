@@ -1,39 +1,28 @@
-import { useEffect, useState } from "react";
-import "./App.css"
+import React from "react";
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import Home from "./assets/components/pages/Home";
+import Surah from "./assets/components/pages/Surah";
 
 function App() {
-  const [surahs, setSurahs] = useState([]);
-
-  useEffect(() => {
-    async function fetchData() {
-      const response = await fetch("https://api.alquran.cloud/v1/meta");
-      const result = await response.json();
-      console.log(result);
-      setSurahs(result.data.surahs.references); // Save the 'surahs.references' array
-    }
-
-    fetchData();
-  }, []);
-
   return (
-    <div className="content">
-      <h1>Quran Surahs</h1>
-      <ul>
-        {surahs.map((surah) => (
-          <li key={surah.number}>
-            <h2 className="surahName">{surah.englishName} - {surah.name}</h2>
-            <div className="surahDetails">
-            <p><b>Translation: </b>{surah.englishNameTranslation}</p>
-            <p><b>Number of Ayahs: </b>{surah.numberOfAyahs}</p>
-            <p><b>Revelation Type: </b>{surah.revelationType}</p>
-            </div>
-            <button onClick={() => alert(`You selected Surah ${surah.englishName}`)}>
-              Read Surah {surah.englishName}
-            </button>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <Router>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/surah">Surah</Link>
+            </li>
+          </ul>
+        </nav>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/surah" element={<Surah />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
