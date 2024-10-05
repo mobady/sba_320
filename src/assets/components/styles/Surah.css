@@ -21,7 +21,7 @@ justify-items: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url('../surahName.jpeg');
+  background: url('./surahName.jpeg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -46,7 +46,7 @@ justify-items: center;
 }
 
 .ayahNum {
-  background: url('/Users/mohamedmahmoudbady/Desktop/SBA_320/ayahNum.jpeg') no-repeat center center;
+  background: url('./ayahNum.jpeg') no-repeat center center;
   background-size: contain;
   display: flex;
   justify-content: center;
