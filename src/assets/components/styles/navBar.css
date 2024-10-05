@@ -1,10 +1,9 @@
-/* Navbar styles */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #ffd700; /* Golden color for the navbar */
+    background-color: goldenrod; 
     border-bottom: 2px solid #ffd700;
     position: sticky;
     top: 0;
@@ -14,15 +13,15 @@
   .logo h1 {
     font-size: 1.6em;
     margin: 0;
-    color: #000; /* Black text for the logo */
+    color: #000; 
   }
   
-  /* Default nav-links - hidden on mobile */
+ 
   .nav-links {
     display: flex;
     list-style: none;
     transition: left 0.3s ease;
-    left: -100%; /* Off-screen initially */
+    left: -100%; 
     position: absolute;
     background-color: #000;
     top: 60px;
@@ -32,12 +31,11 @@
     padding: 20px 0;
   }
   
-  /* Make nav-links visible when active */
+
   .nav-links.active {
-    left: 0; /* Slide into view */
+    left: 0; 
   }
   
-  /* Show nav-links on larger screens (non-mobile) */
   @media (min-width: 768px) {
     .nav-links {
       display: flex;
@@ -51,23 +49,22 @@
     }
   }
   
-  /* Individual nav link styles */
+
   .nav-links li {
     margin: 0 20px;
   }
   
   .nav-links li a {
     text-decoration: none;
-    color: #ffd700; /* Golden color for the links */
+    color: goldenrod; 
     font-size: 1.2em;
     transition: color 0.3s ease;
   }
   
   .nav-links li a:hover {
-    color: #fff; /* White on hover */
+    color: #fff;
   }
   
-  /* Menu Toggle for Mobile (Hamburger Menu) */
   .menu-toggle {
     display: none;
     flex-direction: column;
@@ -83,12 +80,11 @@
   }
   
   @media (max-width: 768px) {
-    /* Display hamburger menu on smaller screens */
     .menu-toggle {
       display: flex;
     }
   
-    /* Show the mobile nav-links when the menu is toggled */
+ 
     .nav-links {
       position: absolute;
       top: 60px;
@@ -110,9 +106,30 @@
     }
   }
   
-  /* Style for the mobile links */
+
   .nav-links li a {
     font-size: 1.2em;
     padding: 10px 20px;
+  }
+  
+ 
+.logo-button {
+    text-decoration: none; 
+  }
+  
+  .logo-button h1 {
+    font-size: 1.8em;
+    margin: 0;
+    color: #000; /* Button color */
+    background-color: goldenrod; /* Button background */
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: #000 1px solid;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .logo-button h1:hover {
+    background: rgb(0,0,0);
+  background: linear-gradient(167deg, rgba(0,0,0,1) 1%, rgba(218,165,32,1) 100%);
   }
   
