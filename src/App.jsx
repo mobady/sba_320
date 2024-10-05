@@ -1,7 +1,7 @@
-import React from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Home from "./assets/components/pages/Home";
 import Surah from "./assets/components/pages/Surah";
+import './App.css';
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
         </nav>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/surah" element={<Surah />} />
+          <Route path="/surah/:surahNumber" element={<Surah />} />
         </Routes>
       </div>
     </Router>
@@ -27,3 +27,4 @@ function App() {
 }
 
 export default App;
+

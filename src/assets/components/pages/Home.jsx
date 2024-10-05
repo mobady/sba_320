@@ -1,4 +1,7 @@
 import { useEffect, useState } from "react";
+import { Link } from 'react-router-dom';
+
+
 import "../styles/Home.css"
 
 function Home() {
@@ -19,17 +22,18 @@ function Home() {
     <div className="content">
       <h1>Quran Surahs</h1>
       <ul>
-        {surahs.map((surah) => (
+        {surahs.map(surah => (
           <li key={surah.number}>
             <h2 className="surahName">{surah.englishName} - {surah.name}</h2>
             <div className="surahDetails">
-            <p><b>Translation: </b>{surah.englishNameTranslation}</p>
-            <p><b>Number of Ayahs: </b>{surah.numberOfAyahs}</p>
-            <p><b>Revelation Type: </b>{surah.revelationType}</p>
+              <p><b>Translation: </b>{surah.englishNameTranslation}</p>
+              <p><b>Number of Ayahs: </b>{surah.numberOfAyahs}</p>
+              <p><b>Revelation Type: </b>{surah.revelationType}</p>
+              <Link to={`/surah/${surah.number}`}>
+                <button className="buttonContainer">
+                  Read Surah {surah.englishName}</button>
+              </Link>
             </div>
-            <button onClick={() => alert(`You selected Surah ${surah.englishName}`)}>
-              Read Surah {surah.englishName}
-            </button>
           </li>
         ))}
       </ul>

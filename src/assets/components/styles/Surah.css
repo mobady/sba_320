@@ -1,0 +1,29 @@
+
+.ayah {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+    margin: 10px 0;
+    height: 60px;
+    padding: 10px;
+    border-radius: 20px;
+    border: goldenrod 3px solid;
+
+  }
+  
+  .ayahNum {
+    background: url('/Users/mohamedmahmoudbady/Desktop/SBA_320/ayahNum.jpeg') center center no-repeat;
+    background-position: contain;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px; 
+    width: 60px; 
+    margin-right: 10px; 
+    color: #070000;
+    font-weight: bold;
+  }
+  
