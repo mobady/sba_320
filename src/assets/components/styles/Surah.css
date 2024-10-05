@@ -1,29 +1,67 @@
+body {
+  display: block;
+justify-items: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px auto;
+  border: 2px solid goldenrod;
+}
+.contentAyah {
+  display: block;
+justify-items: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px auto;
+  border: 2px solid goldenrod;
+}
 
+.surahNameAyah {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../surahName.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 40px;
+  height: 100px;
+  width: 400px;
+  color: #fff;
+}
 .ayah {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #ffffff;
-    margin: 10px 0;
-    height: 60px;
-    padding: 10px;
-    border-radius: 20px;
-    border: goldenrod 3px solid;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center; /* Center the Ayah text and number horizontally */
+  align-items: center; /* Align items vertically in the middle */
+  padding: 20px;
+  margin: 20px auto;
+  border: 2px solid goldenrod;
+  width: 100%;
+  max-width: 800px;
+  color: #fff;
+  box-sizing: border-box;
+  text-align: center; /* Center the Ayah text */
+}
 
-  }
-  
-  .ayahNum {
-    background: url('/Users/mohamedmahmoudbady/Desktop/SBA_320/ayahNum.jpeg') center center no-repeat;
-    background-position: contain;
-    background-size: contain;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px; 
-    width: 60px; 
-    margin-right: 10px; 
-    color: #070000;
-    font-weight: bold;
-  }
-  
+.ayahNum {
+  background: url('/Users/mohamedmahmoudbady/Desktop/SBA_320/ayahNum.jpeg') no-repeat center center;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px; /* Keep the background size consistent */
+  margin-right: 20px;
+  color: #f7d700;
+  font-weight: bold;
+}
+
+.ayahText {
+  text-align: center; /* Ensure the Ayah text is centered */
+  color: #fff;
+  word-wrap: break-word; /* Ensure long Ayah text wraps properly */
+  line-height: 1.5;
+  font-size: 1.2em; /* Increase font size for better readability */
+}
