@@ -3,6 +3,7 @@ import Home from "./assets/components/pages/Home";
 import Surah from "./assets/components/pages/Surah";
 import Navbar from "./assets/components/pages/navBar";
 import './App.css';
+import Main from './assets/components/pages/Main';
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <Navbar />
       <div>
         <Routes>
-          <Route path="/" element={<Home />} />
+        <Route path="/" element={<Main />} />
+          <Route path="/surah" element={<Home />} />
           <Route path="/surah/:surahNumber" element={<Surah />} />
         </Routes>
       </div>
