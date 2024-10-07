@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
-
-
 import "../styles/Home.css"
 
 function Home() {
@@ -19,7 +17,7 @@ function Home() {
   }, []);
 
   return (
-    <div className="content">
+    <div className="contentHome">
       <h1>Quran Surahs</h1>
       <ul>
         {surahs.map(surah => (

@@ -7,16 +7,16 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh; 
+  width: 100vh;
 }
 
-.content {
+.contentHome {
   display: block;
-justify-items: center;
   justify-content: center;
   align-items: center;
   text-align: center;
   margin: 20px auto;
-  border: 2px solid goldenrod;
+  width: 100vh;
 }
 
 h1 {
@@ -40,6 +40,13 @@ h1 {
 
 ul {
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
 }
 
 .surahName {
