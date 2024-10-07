@@ -24,6 +24,9 @@ function Navbar() {
                 <li>
                     <Link to="/surah" onClick={toggleMenu}>Surahs</Link>
                 </li>
+                <li>
+                    <Link to="/signup" onClick={toggleMenu}>Signup</Link>
+                </li>
             </div>
             <div className="menu-toggle" onClick={toggleMenu}>
                 <div className="bar"></div>

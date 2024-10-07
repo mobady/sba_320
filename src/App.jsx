@@ -4,6 +4,7 @@ import Surah from "./assets/components/pages/Surah";
 import Navbar from "./assets/components/pages/navBar";
 import './App.css';
 import Main from './assets/components/pages/Main';
+import Signup from './assets/components/pages/Signup';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Main />} />
           <Route path="/surah" element={<Home />} />
           <Route path="/surah/:surahNumber" element={<Surah />} />
+          <Route path="/signup" element={<Signup />} />
         </Routes>
       </div>
     </Router>
