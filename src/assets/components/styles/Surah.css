@@ -5,10 +5,10 @@ justify-items: center;
   align-items: center;
   text-align: center;
   margin: 20px auto;
-  border: 2px solid goldenrod;
 }
 .contentAyah {
   display: flex;
+  flex-direction: column;
 justify-items: center;
   justify-content: center;
   align-items: center;
@@ -31,16 +31,7 @@ justify-items: center;
   color: #fff;
 }
 
-ul {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
 
-}
 .ayah {
   display: flex;
   flex-direction: row-reverse;
